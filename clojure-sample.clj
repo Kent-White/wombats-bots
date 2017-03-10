@@ -2,7 +2,7 @@
   (def turn-directions [:right :left :about-face])
   (def smoke-directions [:forward :backward :left :right :drop])
 
-  (let [command-options [(repeat 7 {:action :move
+  (let [command-options [(repeat 2 {:action :move
                                      :metadata {}})
                          (repeat 2 {:action :turn
                                     :metadata {:direction (rand-nth turn-directions)}})
